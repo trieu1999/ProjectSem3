@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bfb7f7f4d84a43c29109925a7260b853" Name="Diagram1">
+        <EntityTypeShape EntityType="masterModel.Airline" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.Airport" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.Booking_Ticket" Width="1.5" PointX="9.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.DiscountDetail" Width="1.5" PointX="12.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.Flight" Width="1.5" PointX="7.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.Location" Width="1.5" PointX="0.75" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.Plane" Width="1.5" PointX="5.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.Price" Width="1.5" PointX="9.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.QuantitySeatClass" Width="1.5" PointX="12.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.ReservationMod" Width="1.5" PointX="7.5" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.Router" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.SeatClass" Width="1.5" PointX="7.5" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.SeatDetailByFlight" Width="1.5" PointX="9.75" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.SeatNumber" Width="1.5" PointX="7.5" PointY="11.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.TypeDiscount" Width="1.5" PointX="10.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.MSreplication_options" Width="1.5" PointX="0.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.spt_fallback_db" Width="1.5" PointX="2.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.spt_fallback_dev" Width="1.5" PointX="4.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.spt_fallback_usg" Width="1.5" PointX="11.75" PointY="11.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="masterModel.spt_monitor" Width="1.5" PointX="13.75" PointY="11.25" IsExpanded="true" />
+        <AssociationConnector Association="masterModel.FK_Planes_Airlines" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Airports_Locations" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Routers_Airports" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Routers_Airports1" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Booking_Ticket_Flights" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Booking_Ticket_Flights1" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Booking_Ticket_Prices" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Booking_Ticket_ReservationMod" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Booking_Ticket_SeatDetailByFlight" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_DiscountDetail_Flights" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_DiscountDetail_TypeDiscount" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Flights_Planes" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Flights_Routers" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Prices_Flights" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_SeatDetailByFlight_Flights" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_QuantitySeatClass_Planes" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_SeatNumbers_Planes" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_Prices_SeatClasses" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_QuantitySeatClass_SeatClasses" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_SeatNumbers_SeatClasses" ManuallyRouted="false" />
+        <AssociationConnector Association="masterModel.FK_SeatDetailByFlight_SeatNumbers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
